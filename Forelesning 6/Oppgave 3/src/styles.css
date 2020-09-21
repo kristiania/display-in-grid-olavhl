@@ -1,9 +1,55 @@
 /* For mobile phones: */
-  
-@media only screen and (min-width: 600px) {
-/* For tablets: */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+  font-size: 80px;
 }
 
-@media only screen and (min-width: 768px) {
-/* For desktop: */
+.grid-item {
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  grid-column: 1/5;
+}
+
+.side1andcont {
+  background-color: #444444;
+}
+
+.side2 {
+  background-color: #cccccc;
+  color: #44444c;
+}
+
+.footandhead {
+  background-color: #999999;
+}
+
+@media screen and (min-width: 600px) {
+  /* For tablets: */
+
+  #sidebar1 {
+    grid-column: 1/2;
+  }
+
+  #content {
+    grid-column: 2/5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* For desktop: */
+
+  #sidebar1 {
+    grid-column: 1/2;
+  }
+
+  #content {
+    grid-column: 2/4;
+  }
+
+  .side2 {
+    grid-column: 4/5;
+  }
 }
