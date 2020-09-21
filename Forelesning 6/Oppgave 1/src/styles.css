@@ -1,31 +1,41 @@
-.grid-container{
-
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  width: 700px;
 }
 
-grid-item {
+.grid-item {
+  border-radius: 5px;
+  height: 50px;
 }
 
-#grid-one{
-    background-color: red;
-    color: red;
+#grid-one {
+  background-color: red;
+  color: red;
+  grid-column: 1/3;
 }
 
-#grid-two{
-    background-color: blue;
-    color: blue;
+#grid-two {
+  background-color: blue;
+  color: blue;
+  grid-column: 3/5;
 }
 
-#grid-three{
-    background-color: green;
-    color: green;
+#grid-three {
+  background-color: green;
+  color: green;
+  grid-column: 1;
 }
 
-#grid-four{
-    background-color: purple;
-    color: purple;
+#grid-four {
+  background-color: purple;
+  color: purple;
+  grid-column: 2/5;
 }
 
-#grid-five{
-    background-color:yellow;
-    color: yellow;
+#grid-five {
+  background-color: yellow;
+  color: yellow;
+  grid-column: 1/5;
 }
